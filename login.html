@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>医院考试平台</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/jquery.idcode.css" />
+		<link rel="stylesheet" href="css/basic.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="layer/layer.js"></script>
+		<script src="laydate/laydate.js"></script>
+		<script src="js/jquery.idcode.js"></script>
+	</head>
+	<body>
+		<div class="register_bg" style="background: url(img/register_bg.png) no-repeat center;background-size: 100%;">
+			<div class="login_box">
+				<div class="login_left pull-left">
+					<div class="login_left1"></div>
+					<div class="login_left2"></div>
+					<div class="company_name">
+						<h3>TEST SYSTEM</h3>
+						<p>HUMAN </p>
+						<span>SPER MORPHOLOGY</span>
+						<i>人类精子形态学规范化与质量控制系统</i>
+					</div>
+				</div>
+				<!--登录-->
+				<div class="login_right  pull-left ">
+						<i>登录账号</i>
+						<div class="input_group">							
+							<div class="input-group">
+					            <span class="input-group-addon"><img src="img/user.png"/></span>
+					            <input type="text" class="form-control" id="login_phone" placeholder="请输入登录账号">
+					        </div>
+					        <div class="input-group">
+					            <span class="input-group-addon"><img src="img/user_block.png"/></span>
+					            <input type="password" class="form-control" id="login_pas" placeholder="请输入登录密码">
+					        </div>
+					        </div>
+					        <p class="fotpas clearfix">忘记密码？</p>
+					        <p class="clearfix login_btn_list">
+					        	<button class="btn res_news pull-left"><a href="register.html">注册新用户</a></button>
+					        	<button class="btn toindex pull-right">进入系统 ></button>
+					        </p>				
+				</div>
+				<!--忘记密码-->
+				<div class="login_right  pull-left hide" id='forgetpas'>
+						<i>忘记密码</i>
+						<div class="input_group">							
+							<div class="input-group">					         
+					            <input type="text" class="form-control" id="phone_num" placeholder="您注册时的手机号码">
+					        </div>
+					        <div class="input-group">			           
+					            <input type="text" id="login_code" class="form-control" placeholder="输入验证码">
+					             <span class="input-group-addon">获取验证码</span>
+					        </div>
+					        </div>
+					     <!--   <p class="fotpas clearfix">忘记密码？</p>-->
+					        <p class="clearfix login_btn_list">
+					        	<button class="btn res_news pull-left"><a href="register.html">注册新用户</a></button>
+					        	<button class="btn next_way pull-right">下一步 ></button>
+					        </p>				
+				</div>
+				<!--新密码-->
+				<div class="login_right  pull-left hide" id='newpassword'>
+						<i>新密码</i>
+						<div class="input_group">							
+							<div class="input-group">					         
+					            <input type="password" id="set_new_pas" class="form-control" placeholder="输入新密码">
+					        </div>
+					        <div class="input-group">			           
+					            <input type="password" id="sure_new_pas"  class="form-control" placeholder="确认新密码">					        
+					        </div>
+					        </div>
+					        <p class="clearfix login_btn_list">					        	
+					        	<button class="btn goindex pull-right">保存并进入主页 </button>
+					        </p>				
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">		
+			$(function(){
+//				设置新密码
+				$('.goindex').click(function(){
+					if($('#set_new_pas').val()!=''&&$('#sure_new_pas').val()!=''){
+						if($('#set_new_pas').val()!=$('#sure_new_pas').val()){
+							layer.msg('两次输入的密码不一致',{time:1000})
+						}else{
+							window.location.href="index.html"
+						}
+					}else{
+						layer.msg('请填写完整信息',{time:1000})
+					}
+				})
+//				忘记密码
+				$('.fotpas').click(function(){
+					$('.login_right').addClass('hide');
+					$('#forgetpas').removeClass('hide')
+				})
+				$('.next_way').click(function(){
+					if($('#phone_num').val()!=''&&$('#login_code').val()!=''){
+						if(!(/^1[34578]\d{9}$/.test($('#phone_num').val()))){
+							layer.msg('手机号码格式不正确',{time:1000})
+						}else{
+							$('.login_right').addClass('hide');
+							$('#newpassword').removeClass('hide')
+						}											
+					}else{
+						layer.msg('请填写完整信息',{time:1000})
+					}
+				})
+				
+//				登录
+				$('.toindex').click(function(){
+					if($('#login_phone').val()!=''&&$('#login_pas').val()!=''){
+						if(!(/^1[34578]\d{9}$/.test($('#login_phone').val()))){
+							layer.msg('手机号码格式不正确',{time:1000})
+						}else{
+							window.location.href="index.html"
+						}
+					}else{
+						layer.msg('请填写完整信息',{time:1000})
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

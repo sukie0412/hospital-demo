@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>医院考试平台</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/basic.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="layer/layer.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="container">
+			<div class="header">
+				<div class="head">
+					<div class="head_left pull-left">
+						<img src="http://iph.href.lu/24x24" />
+						<h3>人类精子形态学规范化培训与质量控制<span>考试系统</span></h3>
+					</div>
+					<div class="head_right pull-right">
+						<span class="glyphicon glyphicon-bell pull-left" style="color: #fff;"><span class="badge">6</span></span>
+						<ul class="pull-left">
+							<li>
+								<a href="user.html"><img src="http://iph.href.lu/24x24" alt="" />个人中心</a>
+							</li>
+							<li>
+								<a href="">退出</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="head_bottom"><span class="glyphicon glyphicon-bell" style="color: #fff;font-size: 12px;margin-right: 5px;"></span>公告：用户名需要自注册，经管理员审核后才能使用。如果没有用户名进入，也能做简单的测试，只能在限定的题目内选择。</p>
+			</div>
+
+			<!--内容框-->
+			<div class="center clearfix">
+				<div class="slide_left pull-left">
+					<ul class="list-group">
+						<li class="list-group-item" id="index">
+							<a href="index.html">首页</a>
+						</li>
+						<li class="list-group-item" id="shape">
+							<a href="shape.html">第五版形态练习</a>
+						</li>
+						<li class="list-group-item  active" id="guidance">
+							<a href="guidance.html">指导中心练习</a>
+						</li>
+						<li class="list-group-item" id="simulation">
+							<a href="">模拟考试</a>
+						</li>
+						<li class="list-group-item" id="exam">
+							<a href="">正式考试</a>
+						</li>
+						<li class="list-group-item" id="tags">
+							<a href="redo.html">错题重做</a>
+						</li>
+						<li class="list-group-item" id="guide">
+							<a href="guide.html">考试指南</a>
+						</li>
+					</ul>
+				</div>
+				<div class="slide_right pull-right">
+					<div class="slide_right_top  clearfix">
+						<ol class="breadcrumb pull-left">
+							<span class="glyphicon glyphicon-map-marker"></span> 您当前的位置：
+							<li>
+								<a href="#">首页</a>
+							</li>
+							<li class="active">
+								<a href="#">指导中心练习</a>
+							</li>
+							<li class="active">
+								<a href="#">题库1</a>
+							</li>
+						</ol>
+						<em class="pull-right">2017年11月6日  12:05:31</em>
+					</div>
+					<div class="slide_right_center clearfix pd15">
+						<!--第五版形态练习详情-->
+						<div class="slide_center_list clearfix">
+							<div class="slide_panel shape_details_title clearfix">
+								<p class="flex"><img src="img/guidance.png" alt="" />指导中心练习</p>
+								<span class="pull-left">题库1-未答试题<font>30</font>道</span>
+								<em class="pull-right">已完成<i>0</i>/<font>30</font></em>
+							</div>
+						</div>
+
+						<div class="shape_center_left col-lg-8">
+							<ul class="list-group">
+								<li class="list-group-item" id="1">
+									<dl>
+										<dt>1. 下列关于精子的描述，正确的是？ </dt>
+										<dd>
+											<input type="radio" name="ques1" value="" /> A、所有动物的精子都是在睾丸内产生的
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> B、精子的大小与动物的体型大小成正比
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> C、精细胞的细胞核变为精子的头部，线粒体演变为精子的尾部
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> D、精子获能后才具备受精的能力
+										</dd>
+									</dl>
+								</li>
+								<li class="list-group-item" id="2">
+									<dl>
+										<dt>2.精细胞变形成精子的过程中，细胞中的很多结构会消失，是否正常？ </dt>
+										<dd>
+											<input type="radio" name="ques2" value="" /> 正常
+										</dd>
+										<dd>
+											<input type="radio" name="ques2" class="unnormal" value="" /> 异常
+											<div class="normal_list">
+												<dl>
+													<dt><input type="checkbox" name="" id="" value="" />A、头部异常</dt>
+													<div class="clearfix">
+														<ul>
+															<li><input type="checkbox" name="" id="" value="" />a、外形异常 </li>
+															<li><input type="checkbox" name="" id="" value="" />b、顶体异常</li>
+															<li><input type="checkbox" name="" id="" value="" />c、空泡异常</li>
+														</ul>
+													</div>
+
+													<dt><input type="checkbox" name="" id="" value="" />B、颈和中段异常 </dt>
+													<div class="clearfix">
+														<ul>
+															<li><input type="checkbox" name="" id="" value="" />a、外形异常 </li>
+															<li><input type="checkbox" name="" id="" value="" />b、顶体异常</li>
+															<li><input type="checkbox" name="" id="" value="" />c、空泡异常</li>
+														</ul>
+													</div>
+													<dt><input type="checkbox" name="" id="" value="" />C、主段异常 </dt>
+													<div class="clearfix">
+														<ul>
+															<li><input type="checkbox" name="" id="" value="" />a、外形异常 </li>
+															<li><input type="checkbox" name="" id="" value="" />b、顶体异常</li>
+															<li><input type="checkbox" name="" id="" value="" />c、空泡异常</li>
+														</ul>
+													</div>
+													<dt><input type="checkbox" name="" id="" value="" />D、过量残留胞浆</dt>
+													<div class="clearfix">
+														<ul>
+															<li><input type="checkbox" name="" id="" value="" />a、外形异常 </li>
+															<li><input type="checkbox" name="" id="" value="" />b、顶体异常</li>
+															<li><input type="checkbox" name="" id="" value="" />c、空泡异常</li>
+														</ul>
+													</div>
+												</dl>
+											</div>
+										</dd>
+
+									</dl>
+								</li>
+								<li class="list-group-item" id="3">
+									<dl>
+										<dt>3. 下列关于精子的描述，正确的是？ </dt>
+										<dd>
+											<input type="radio" name="ques1" value="" /> A、所有动物的精子都是在睾丸内产生的
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> B、精子的大小与动物的体型大小成正比
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> C、精细胞的细胞核变为精子的头部，线粒体演变为精子的尾部
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> D、精子获能后才具备受精的能力
+										</dd>
+									</dl>
+								</li>
+								<li class="list-group-item" id="4">
+									<dl>
+										<dt>4.精细胞变形成精子的过程中，细胞中的很多结构会消失，是否正常？ </dt>
+										<dd>
+											<input type="radio" name="ques2" value="" /> 正常
+										</dd>
+										<dd>
+											<input type="radio" name="ques2" value="" /> 异常
+										</dd>
+
+									</dl>
+								</li>
+								<li class="list-group-item" id="5">
+									<dl>
+										<dt>5. 下列关于精子的描述，正确的是？ </dt>
+										<dd>
+											<input type="radio" name="ques1" value="" /> A、所有动物的精子都是在睾丸内产生的
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> B、精子的大小与动物的体型大小成正比
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> C、精细胞的细胞核变为精子的头部，线粒体演变为精子的尾部
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> D、精子获能后才具备受精的能力
+										</dd>
+									</dl>
+								</li>
+								<li class="list-group-item" id="6">
+									<dl>
+										<dt>6.精细胞变形成精子的过程中，细胞中的很多结构会消失，是否正常？ </dt>
+										<dd>
+											<input type="radio" name="ques2" value="" /> 正常
+										</dd>
+										<dd>
+											<input type="radio" name="ques2" value="" /> 异常
+										</dd>
+
+									</dl>
+								</li>
+								<li class="list-group-item" id="7">
+									<dl>
+										<dt>7. 下列关于精子的描述，正确的是？ </dt>
+										<dd>
+											<input type="radio" name="ques1" value="" /> A、所有动物的精子都是在睾丸内产生的
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> B、精子的大小与动物的体型大小成正比
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> C、精细胞的细胞核变为精子的头部，线粒体演变为精子的尾部
+										</dd>
+										<dd>
+											<input type="radio" name="ques1" value="" /> D、精子获能后才具备受精的能力
+										</dd>
+									</dl>
+								</li>
+								<li class="list-group-item" id="8">
+									<dl>
+										<dt>8.精细胞变形成精子的过程中，细胞中的很多结构会消失，是否正常？ </dt>
+										<dd>
+											<input type="radio" name="ques2" value="" /> 正常
+										</dd>
+										<dd>
+											<input type="radio" name="ques2" value="" /> 异常
+										</dd>
+
+									</dl>
+								</li>
+							</ul>
+
+						</div>
+						<div class="shape_center_right col-lg-4">
+							<p class="shape_right_title flex"><img src="img/clock.png" />剩余答题时间 <span>2小时30分25秒</span></p>
+							<div class="shape_subject_list">
+								<dl class="clearfix">
+									<dt>题号</dt>
+									<dd class="col-lg-1">
+										<a href="#1">1</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#2">2</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#3">3</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#4">4</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#5">5</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#6">6</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#7">7</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#8">8</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#9">9</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#10">10</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#11">11</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#12">12</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#13">13</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#14">14</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#15">15</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#16">16</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#17">17</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#18">18</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#19">19</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#20">20</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#21">21</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#22">22</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#23">23</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#24">24</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#25">25</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#26">26</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#27">27</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#28">28</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#29">29</a>
+									</dd>
+									<dd class="col-lg-1">
+										<a href="#30">30</a>
+									</dd>
+								</dl>
+
+								<p class="text-center isnone flex">
+									<span class="flex">已填<i class="on"></i></span>
+									<span class="flex">未填<i></i></span>
+								</p>
+							</div>
+							<div class="shape_btn_list">
+								<button class="btn btn-block goshape"><img src="img/back.png"/>返回题库列表</button>
+								<button class="btn btn-block btn_danger doall"><img src="img/true.png"/>已完成交卷</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		
+
+		<script>
+			$(function() {
+				//				已选未选
+				var seton = function(sid) {
+					console.log(123)
+					$('.shape_subject_list dl dd').each(function() {
+						if($(this).find('a').text() == sid) {
+							$(this).addClass('on')
+						}
+					})
+				}
+				//				二级选项				
+				$('.shape_center_left input[type="radio"]').click(function() {
+					var sid = $(this).closest('li').attr('id')
+					if($(this).is('input[name="ques2"].unnormal')) {
+						$(this).closest('dd').find('.normal_list dl').show()
+					} else {
+						$(this).closest('dl').find('.normal_list dl').hide()
+					}
+					seton(sid)
+				})
+				//				三级选项
+				$('.normal_list dt input[type="checkbox"]').click(function() {
+					if($(this).is(":checked")) {
+						$(this).closest('dt').next('div').show()
+					} else {
+						$(this).closest('dt').next('div').hide()
+					}
+				})
+				//				返回题库列表
+				$('.goshape').click(function() {
+					layer.confirm('确定退出吗？退出后已填试题将丢失！', {
+						closeBtn: 0,
+						title: "退出"
+					}, function(index) {
+						window.location.href = "guidance.html"
+						layer.close(index);
+					});
+				})
+				//				交卷
+				$('.doall').click(function() {
+					var items = $('.shape_subject_list dl dd')
+					if(items.length == items.filter('on').length) {
+						layer.confirm('您已完成全部试题，是否确定交卷?', {
+							closeBtn: 0,
+							title: "确定交卷",
+							btn: ['确定交卷', '继续做题']
+						}, function(index) {
+							layer.close(index);
+							//						成功提交展示试题报告
+							var con = '';
+							con += '<div class="pd15 report">';
+							con += '<table class="table table-bordered">';
+							con += '<thead>';
+							con += '<tr style="background:#09B7CE">';
+							con += '<th style="background:#00A8B3" ></th>';
+							con += '<th >总题量</th>';
+							con += '<th>做对</th>';
+							con += '<th>做错</th>';
+							con += '<th>总分</th>';
+							con += '<th>得分</th>';
+							con += '<th>正确率</th>';
+							con += '</tr>';
+							con += '</thead>';
+							con += '<tbody>';
+							con += '<tr>';
+							con += '<td>单选题</td>';
+							con += '<td>20</td>';
+							con += '<td style="color:#8bc34a">15</td>';
+							con += '<td style="color:red">5</td>';
+							con += '<td>40</td>';
+							con += '<td><font color="#21b7cc">30</font></td>';
+							con += '<td><span style="font-size:24px;color:#ff9800">75%</span>';
+							con += '</tr>';
+							con += '<tr>';
+							con += '<td>多级选题</td>';
+							con += '<td>20</td>';
+							con += '<td style="color:#8bc34a">15</td>';
+							con += '<td style="color:red">5</td>';
+							con += '<td>40</td>';
+							con += '<td><font color="#21b7cc">30</font></td>';
+							con += '<td><span style="font-size:24px;color:#ff9800">75%</span>';
+							con += '</tr>';
+							con += '<tr>';
+							con += '<td>合计</td>';
+							con += '<td>20</td>';
+							con += '<td style="color:#8bc34a">15</td>';
+							con += '<td style="color:red">5</td>';
+							con += '<td>40</td>';
+							con += '<td><font color="#21b7cc">30</font></td>';
+							con += '<td><span style="font-size:24px;color:#ff9800">75%</span>';
+							con += '</tr>';
+							con += '</tbody>';			
+							con += '</table>';
+							con += '<span>正确率=做对试题/总题量</span>'							
+							con += '<p class="text-center">';
+							con += '<span>已完成的人数<font color="#00b7d0">278</font>人</span>，';
+							con += '<span>需要完成的人数<font color="#ff9800">28</font>人</span>';
+							con += '</p>';
+							con += '<p class="text-center report_btn_list">';
+							con += '<a href="" class="btn reser"><img src="img/tags_on.png">错题重做</a>';
+							con += '<a href="shape.html" class="btn goshapes"><img src="img/meau.png">返回题库列表</a>';
+							con += '</p>';
+							con += '</div>';
+							layer.open({
+								type: 1,
+								title: "试题报告",
+								area: ['700px', '350px'], //宽高
+								content: con,
+								cancel: function(index, layero) {
+									window.location.href = "guidance.html"
+								}
+							});
+						});
+					} else {
+						var remain = items.length - items.filter('on').length;
+						layer.confirm('您还有' + remain + '道(请检查答案中下级细项是否已作答)试题未作答，请完成所有试题后再交卷！', {
+								btn: ['继续答题', '取消'],
+								closeBtn: 0,
+								title: "交卷"
+							}, function(index) {
+								layer.close(index);
+							},
+							function(index) {
+								//						  去除已选择的选项
+								$('.shape_center_left  input[type="radio"]').each(function() {
+									$(this).removeAttr('checked')
+								})
+								$('.shape_subject_list dl dd').each(function() {
+									$(this).removeClass('on')
+								})
+							}
+						);
+					}
+				})
+			})
+		</script>
+
+	</body>
+
+</html>
